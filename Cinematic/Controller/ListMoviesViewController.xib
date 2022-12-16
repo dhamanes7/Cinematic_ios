@@ -9,21 +9,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WCf-hq-hHu">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eXk-4U-cLy">
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzI-tp-SSp" customClass="MoviesView" customModule="the_movie_db" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjU-ad-e69" customClass="MoviesView" customModule="the_movie_db" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                 </view>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="3DJ-Hv-ndt"/>
+            <viewLayoutGuide key="safeArea" id="GME-xp-4lI"/>
             <color key="backgroundColor" red="0.031372549020000001" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="3DJ-Hv-ndt" firstAttribute="trailing" secondItem="zzI-tp-SSp" secondAttribute="trailing" id="KLg-Yx-DiF"/>
-                <constraint firstItem="zzI-tp-SSp" firstAttribute="leading" secondItem="3DJ-Hv-ndt" secondAttribute="leading" id="RIO-fY-IUb"/>
-                <constraint firstItem="zzI-tp-SSp" firstAttribute="top" secondItem="3DJ-Hv-ndt" secondAttribute="top" id="ffF-wR-RgU"/>
-                <constraint firstItem="3DJ-Hv-ndt" firstAttribute="bottom" secondItem="zzI-tp-SSp" secondAttribute="bottom" id="w9N-xq-RCZ"/>
+                <constraint firstItem="fjU-ad-e69" firstAttribute="leading" secondItem="GME-xp-4lI" secondAttribute="leading" id="Alk-6F-Y9M"/>
+                <constraint firstItem="fjU-ad-e69" firstAttribute="top" secondItem="GME-xp-4lI" secondAttribute="top" id="Bmf-wO-RxL"/>
+                <constraint firstItem="GME-xp-4lI" firstAttribute="bottom" secondItem="fjU-ad-e69" secondAttribute="bottom" id="kXS-Zo-Cbu"/>
+                <constraint firstItem="GME-xp-4lI" firstAttribute="trailing" secondItem="fjU-ad-e69" secondAttribute="trailing" id="yv9-87-QrO"/>
             </constraints>
             <point key="canvasLocation" x="139" y="154"/>
         </view>
