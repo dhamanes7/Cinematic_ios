@@ -12,7 +12,7 @@ class MovieService: Service {
 
     func fetchPopularMovies(with
         page: Int,
-        completion: @escaping (Movie?, MovieServiceError?) -> ()) {
+        completion: @escaping (MovieViewModel?, MovieServiceError?) -> ()) {
 
         let query = [
             URLQueryItem(name: "page", value: "\(page)")
@@ -35,7 +35,7 @@ class MovieService: Service {
                 let decoder = JSONDecoder()
                 decoder.setCustomDateDecodingStrategy()
 
-                let result = try decoder.decode(Movie.self, from: data)
+                let result = try decoder.decode(MovieViewModel.self, from: data)
                 completion(result, nil)
             } catch {
                 completion(nil, MovieServiceError.CannotFetch())
@@ -75,7 +75,7 @@ class MovieService: Service {
     func fetchMovies(with
         search: String,
         page: Int,
-        completion: @escaping (Movie?, MovieServiceError?) -> ()) {
+        completion: @escaping (MovieViewModel?, MovieServiceError?) -> ()) {
 
         let query = [
             URLQueryItem(name: "page", value: "\(page)"),
@@ -99,7 +99,7 @@ class MovieService: Service {
                 let decoder = JSONDecoder()
                 decoder.setCustomDateDecodingStrategy()
 
-                let result = try decoder.decode(Movie.self, from: data)
+                let result = try decoder.decode(MovieViewModel.self, from: data)
                 completion(result, nil)
             } catch {
                 completion(nil, MovieServiceError.CannotFetch())

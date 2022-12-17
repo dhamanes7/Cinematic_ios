@@ -7,9 +7,11 @@
 import Foundation
 import UIKit
 
+import UIKit
+
 class ListMoviesViewModel {
 
-    let viewTitle = "Popular Movies"
+    let viewTitle = "Popular Films"
     let movieService = MovieService()
     let genreService = GenreService()
     var movieViewModel = MovieViewModel()
@@ -77,4 +79,3 @@ extension ListMoviesViewModel {
         }
     }
 }
-
