@@ -91,7 +91,7 @@ class MovieService: Service {
                     completion(nil, MovieServiceError.CannotFetch())
                     return
                 }
-                guard let data = data else {
+          guard let data = data else {
                     completion(nil, MovieServiceError.CannotFetch())
                     return
                 }

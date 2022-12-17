@@ -10,7 +10,7 @@ import UIKit
 
 class ListFavoritesViewModel {
 
-    let viewTitle = "Filmes favoritos"
+    let viewTitle = "Favorite Filmes"
     var movieViewModel = MovieViewModel()
     var movieDataSource = MovieDataSource()
     var isLoadingMoreData = false

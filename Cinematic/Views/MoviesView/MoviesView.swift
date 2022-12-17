@@ -14,7 +14,6 @@ protocol MoviesViewInteractionLogic: class {
 }
 class MoviesView: UIView , UICollectionViewDelegate, UICollectionViewDataSource{
     
-      
     @IBOutlet private var contentView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
 

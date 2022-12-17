@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
     // MARK: - Core Data stack
 
     lazy var container: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "the_movie_db")
+        let container = NSPersistentContainer(name: "Cinematic")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 print(error)

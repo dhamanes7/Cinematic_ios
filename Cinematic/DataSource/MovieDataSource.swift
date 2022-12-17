@@ -138,10 +138,10 @@ class MovieDataSource {
 // MARK: - Request errors
 
 enum MovieDataSourceError: Equatable, Error {
-    case CannotSave(String = "Não foi possível salvar o filme nos favoritos. Tente novamente.")
-    case CannotFind(String = "O filme não foi encontrado.")
-    case CannotRemove(String = "Não foi possível remover o filme. Tente novamente.")
-    case CannotFetch(String = "Não foi possível obter a lista de filmes.")
+    case CannotSave(String = "Unable to save movie to favorites. Try again.")
+    case CannotFind(String = "The movie was not found.")
+    case CannotRemove(String = "Unable to remove movie. Try again.")
+    case CannotFetch(String = "Unable to get movie list.")
 }
 
 
